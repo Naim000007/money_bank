@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-5xl font-bold text-center mt-8">Let's get <span class="text-red-600">some money!!!</span></h1>
+    <section class="mt-8">
+        <div class="grid grid-cols-3  gap-4 w-3/4 mx-auto text-center text-white">
+            <div class="bg-yellow-400  p-8">
+                <h2 class="text-4xl">Deposit</h2>
+                <h2 class="text-4xl mt-2">$ <span id="deposit-total">00</span></h2>
+            </div>
+            <div class="bg-red-400  p-8">
+                <h2 class="text-4xl">Withdraw</h2>
+                <h2 class="text-4xl mt-2">$ <span id="withdraw-total">00</span></h2>
+            </div>
+            <div class="bg-blue-400  p-8">
+                <h2 class="text-4xl">Balance</h2>
+                <h2 class="text-4xl mt-2">$ <span id="balance-total">1240</span></h2>
+            </div>
+        </div>
+    </section>
+    <section class="mt-8">
+        <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto text-white">
+            <div class="bg-green-400 p-8">
+                <h2 class="text-4xl mt-2">Your Deposit</h2>
+                <input id="deposit-field" class="w-3/4 px-4 py-3 rounded block mt-4 text-black" placeholder="Deposit Your money" type="text">
+                <button type="button" id="btn-deposit" class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 mt-2">Deposit</button>
+            </div>
+            <div class="bg-indigo-400 p-8">
+                <h2 class="text-4xl mt-2 ">Withdraw</h2>
+                <input id="withdraw-field" class="w-3/4 px-4 py-3 rounded block mt-4 text-black" placeholder="withdraw your money" type="text">
+                <button id="btn-withdraw" type="button" class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 mt-2">Withdraw</button>
+            </div>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>
